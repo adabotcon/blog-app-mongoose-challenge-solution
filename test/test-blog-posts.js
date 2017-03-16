@@ -49,8 +49,6 @@ describe('blog posts API resource', function() {
   });
 
   afterEach(function() {
-    // tear down database so we ensure no state from this test
-    // effects any coming after.
     return tearDownDb();
   });
 
