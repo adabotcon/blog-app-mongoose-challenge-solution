@@ -65,14 +65,11 @@ describe('blog posts API resource', function() {
         .then(_res => {
           res = _res;
           res.should.have.status(200);
-          // otherwise our db seeding didn't work
           res.body.should.have.length.of.at.least(1);
 
           return BlogPost.count();
         })
         .then(count => {
-          // the number of returned posts should be same
-          // as number of posts in DB
           res.body.should.have.length.of(count);
         });
     });
@@ -125,7 +122,6 @@ describe('blog posts API resource', function() {
           res.body.should.include.keys(
             'id', 'title', 'content', 'author', 'created');
           res.body.title.should.equal(newPost.title);
-          // cause Mongo should have created id on insertion
           res.body.id.should.not.be.null;
           res.body.author.should.equal(
             `${newPost.author.firstName} ${newPost.author.lastName}`);
