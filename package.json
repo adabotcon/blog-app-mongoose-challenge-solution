@@ -4,7 +4,8 @@
   "description": "Shopping list app to demo 'the modern classic'",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -28,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/adabotcon/blog-app-mongoose-challenge-solution/issues"
   },
-  "homepage": "https://github.com/adabotcon/blog-app-mongoose-challenge-solution#readme"
+  "homepage": "https://github.com/adabotcon/blog-app-mongoose-challenge-solution#readme",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }
