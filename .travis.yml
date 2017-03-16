@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: wW7G7Uj+tO6M37FPgJRjPnrHyEWtnyOWBQQ/pVIxMk/E3KYGMY1ROyO8VAor41Eqtbc+ePWXWdqHiEhsdbRKS/brtGzyXgqvlTMw9iKkcwVRGN6bdllxIeqxmaC4AFL4Ks3TQyXSZBqsu2VZK5eCezPlSuKD5bnUAnsSUb1tSwp1HSWDtKjEB7b1aj7YSrH8XW5ofx/SBjqHQTmPa7lLo9TZbZo28n5I90juQAhH+XKGCPiISvohJN/xq5zdeAWXC/feptXAshDZXbNIwnps6P+AznpH+gHd8AsMmVirvErgITsw9mFoUN268KqifY6+vghCXtEL2YB1hR2LjLj4NuiMK0OfiGvXstxQA0DsBXxNJdNeHIpWV+XrvLAVkG0v7wQn6THhIWBptOlSTrX15qSSXjpWQAe3P7gq/6Qmz11LrCqyATUL0T/WFovWBU7OdWNJYpsYUmza7ZwcE9fQWqBNc8q1BJDgJsy/b5+czj7BoUQU/EDiRu0iY6oaHaKSrCAheMltUYoQpw+80FaMXu24ZqpkSilXaSY8K6MToBy4y4dDJbni7b7Qt0yjmS/tNn4Hir9l73bvCrfqTsopR0NkCT3eGwLCymge6aFJLNZgYVtdh++fisfB4v2RuDk+DRI8JeG+GpMlviDUWQXBHBQFXpoleNn/u/s3BrD3MhA=
+  app: blog-app-mongoose-challenge-solution
+  on:
+    repo: adabotcon/blog-app-mongoose-challenge-solution
